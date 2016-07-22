@@ -1,0 +1,36 @@
+{
+  "name": "larkapkserver",
+  "version": "1.0.0",
+  "description": "create android install packege.",
+  "main": "index.js",
+  "scripts": {
+    "test": "apktest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lulinhai1982/apkbundleserver.git"
+  },
+  "keywords": [
+    "apk",
+    "bundle",
+    "ceater"
+  ],
+  "author": "lulinhai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lulinhai1982/apkbundleserver/issues"
+  },
+  "homepage": "https://github.com/lulinhai1982/apkbundleserver#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "gm": "^1.22.0",
+    "moment": "^2.14.1",
+    "mysql": "^2.11.1",
+    "pm": "^2.2.6",
+    "pm2": "^1.1.3",
+    "qiniu": "^6.1.11",
+    "request": "^2.73.0"
+  }
+}

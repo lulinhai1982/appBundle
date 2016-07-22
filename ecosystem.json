@@ -1,0 +1,36 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  "apps": [
+    // passport application
+    {
+      "name": "appBundle",
+      "script": "src/index.js",
+      "watch": [
+          "src"
+      ],
+      "ignore_watch": [
+        
+      ],
+
+      "instances": 8,
+      "merge_logs": true,
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "LOG": false,
+        "PORT":80 
+      },
+     "env_dev": {
+        "NODE_ENV": "dev",
+        "LOG": true,
+        "PORT":5000 
+      }
+    }
+  ]
+
+}
